@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ASIT-Website</title>
     <!-- ! Font Awesome JS file -->
     <script
       src="https://kit.fontawesome.com/38ba10c199.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" href="assets/images/ASIT_Logo-01.png" />
     <link rel="stylesheet" href="assets/styles/index.min.css" />
   </head>
   <body>
@@ -47,74 +48,107 @@
     <main>
       <div class="main-left-container">
         <nav>
-          <ul class="main-left-container__nav-border">
-            <li class="left-nav-active">
+          <ul class="main-left-container__nav-border" id="nav">
+            <li class="current" data-scroll="home">
               <a href="#"><i class="fas fa-home"></i></a>
             </li>
-            <li>
+            <li data-scroll="aboutUs">
               <a href="#"><i class="fas fa-info"></i></a>
             </li>
-            <li>
+            <li data-scroll="services">
               <a href="#"><i class="fas fa-briefcase"></i></a>
             </li>
-            <li>
+            <li data-scroll="clients">
               <a href="#"><i class="fas fa-users"></i></a>
             </li>
-            <li>
+            <li data-scroll="testimonials">
               <a href="#"><i class="fas fa-user-edit"></i></a>
             </li>
-            <li>
+            <li data-scroll="contactUs">
               <a href="#"><i class="fas fa-phone-alt"></i></a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="main-center-container">
-        <div class="main-center-container__left">
-          <h1>
-            The Perfect<br />
-            ERP Solution
-          </h1>
-          <h3>Enhance your business</h3>
-          <div class="call-to-action">
-            <p>Want to Digitalize your business? Why not start today?</p>
-            <a href="" class="button-default-web">Get Started</a>
-          </div>
-        </div>
-        <div class="main-center-container__right">
-          <div class="card-container">
-            <div class="card">
-              <i class="far fa-calendar-alt"></i>
-              <h3>2010</h3>
-              <p>We Started</p>
-            </div>
-            <div class="card">
-              <i class="fas fa-toolbox"></i>
-              <h3>50+</h3>
-              <p>ERP Deliveries</p>
-            </div>
-            <div class="card">
-              <i class="fas fa-users"></i>
-              <h3>25000+</h3>
-              <p>Active Users</p>
-            </div>
-            <div class="card">
-              <i class="far fa-clock"></i>
-              <h3>24/7</h3>
-              <p>Client Support</p>
+        <section
+          id="home"
+          class="main-center-container__home"
+          data-anchor="home"
+        >
+          <div class="main-center-container__home__left">
+            <h1>
+              The Perfect<br />
+              ERP Solution
+            </h1>
+            <h3 id="type-animation">Enhance your business</h3>
+            <div class="call-to-action">
+              <p>Want to Digitalize your business? Why not start today?</p>
+              <a href="" class="button-default-web">Get Started</a>
             </div>
           </div>
-        </div>
+          <div class="main-center-container__home__right">
+            <div class="card-container">
+              <div class="card">
+                <i class="far fa-calendar-alt"></i>
+                <h3>2010</h3>
+                <p>We Started</p>
+              </div>
+              <div class="card">
+                <i class="fas fa-toolbox"></i>
+                <h3>50+</h3>
+                <p>ERP Deliveries</p>
+              </div>
+              <div class="card">
+                <i class="fas fa-users"></i>
+                <h3>25000+</h3>
+                <p>Active Users</p>
+              </div>
+              <div class="card">
+                <i class="far fa-clock"></i>
+                <h3>24/7</h3>
+                <p>Client Support</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="aboutUs" class="aboutUs-container" data-anchor="aboutUs">
+          <h4 class="aboutUs-container__title">About Us</h4>
+          <h1>WELCOME!</h1>
+          <h4>Know More About Us</h4>
+          <p>
+            Advanced Software & IT Services Ltd. (ASIT) is a public limited
+            company and member of Bangladesh Association of Software &
+            Information Services (BASIS). We have started our journey as a
+            software developer from 28-February, 2010 and since then we have
+            never looked back. ASIT provides Standardized ERP Softwares as well
+            as Enterprise Softwares designed to meet the ever changing needs of
+            the Customer. It provides software ranging from SME to Large
+            enterprises. We have valiantly done business for a long time and is
+            very well known for our professionalism and expertise. <br />
+            If you have a business we have a business solution for you!
+          </p>
+        </section>
+        <section id="services" data-anchor="services">
+          sdfsdaffsdasfasdf
+        </section>
+        <section id="clients" data-anchor="clients">asdfasdfsadfsdf</section>
+        <section id="testimonials" data-anchor="testimonials">
+          asfdsadfsadfsadfsd
+        </section>
+        <section id="contactUs" data-anchor="contactUs">
+          fsdfasfsadfsadfsdf
+        </section>
       </div>
       <div class="main-right-container">
         <nav class="main-right-container__dot-nav">
-          <ul>
-            <li class="dot-nav-active"><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+          <ul id="nav">
+            <li class="current" data-scroll="home"><a href="#"></a></li>
+            <li data-scroll="aboutUs"><a href="#"></a></li>
+            <li data-scroll="services"><a href="#"></a></li>
+            <li data-scroll="clients"><a href="#"></a></li>
+            <li data-scroll="testimonials"><a href="#"></a></li>
+            <li data-scroll="contactUs"><a href="#"></a></li>
           </ul>
         </nav>
       </div>
@@ -135,5 +169,7 @@
         </div>
       </div>
     </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

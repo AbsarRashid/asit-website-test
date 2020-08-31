@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: blueviolet;
+  font-family: $body-font-family;
+  background-image: $background-image-overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: calc(3vw + 3vh);
+  font-family: $header-font-family;
+}
+
+h3 {
+  font-family: $header-font-family;
+  font-weight: 400;
+  font-size: calc(1.5vw + 1.5vh);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

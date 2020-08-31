@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+$background-image:'../images/background-image-overlay.jpg';
+$background-image-overlay:linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)),
+url($background-image);
+$primary-color: #E2E2E2;
+$secondary-color: #FF113C;
+$extra-color: #8A8A8A;
+$header-font-family:'Montserrat',
+sans-serif;
+$body-font-family: 'Merriweather',
+serif;

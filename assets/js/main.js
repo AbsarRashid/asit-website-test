@@ -154,3 +154,28 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+const serviceMenu = document.querySelectorAll(".box");
+const serviceActiveMenu = document.querySelector(
+  ".services-container__menu .active"
+);
+const generalServices = document.querySelector("#general");
+const erpServices = document.querySelector("#erp");
+erpServices.style.display = "flex";
+generalServices.style.display = "none";
+serviceMenu.forEach((item, index) => {
+  item.addEventListener("click", (event) => {
+    event.preventDefault();
+    if (serviceActiveMenu.innerHTML == "ERP") {
+      serviceActiveMenu.innerHTML = "General";
+      item.getElementsByTagName("a")[0].innerText = "ERP";
+      erpServices.style.display = "none";
+      generalServices.style.display = "flex";
+    } else {
+      serviceActiveMenu.innerHTML = "ERP";
+      item.getElementsByTagName("a")[0].innerText = "General";
+      erpServices.style.display = "flex";
+      generalServices.style.display = "none";
+    }
+  });
+});

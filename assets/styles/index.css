@@ -436,8 +436,128 @@ main .main-center-container .aboutUs-container p {
   line-height: calc(1.5vw + 1.5vh);
 }
 
-main .main-center-container #services {
-  background-color: brown;
+main .main-center-container .services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-center-container .services-container__title {
+  border-bottom: 2px solid #E2E2E2;
+  padding: 0.5rem;
+}
+
+main .main-center-container .services-container__menu {
+  width: 60%;
+  padding: 1rem;
+}
+
+main .main-center-container .services-container__menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .main-center-container .services-container__menu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-center-container .services-container__menu ul li a {
+  color: #E2E2E2;
+}
+
+main .main-center-container .services-container__menu ul li.box {
+  border: 2px solid #E2E2E2;
+  padding: 0 1rem;
+}
+
+main .main-center-container .services-container__menu ul li.box:hover {
+  background-color: #E2E2E2;
+}
+
+main .main-center-container .services-container__menu ul li.box:hover a {
+  color: #8A8A8A;
+}
+
+main .main-center-container .services-container__menu ul li.active {
+  color: #FF113C;
+  font-size: calc(1.4vw + 1.4vh);
+}
+
+main .main-center-container .services-container__items {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+main .main-center-container .services-container__items__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+main .main-center-container .services-container__items__item__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-center-container .services-container__items__item__img-container img {
+  width: 15vw;
+  height: 17vh;
+}
+
+main .main-center-container .services-container__items__item .img-overlay {
+  width: 14vw;
+  height: 15vh;
+  border: 2px solid white;
+  position: absolute;
+  left: 50%;
+  margin-left: -14vw;
+  display: flex;
+  justify-content: center;
+  border-left: 2px solid white;
+}
+
+main .main-center-container .services-container__items__item__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15vh;
+  width: 15vw;
+  background-color: white;
+}
+
+main .main-center-container .services-container__items__item__text-container h5 {
+  padding: 0.5rem;
+  text-align: center;
+  color: darkslategray;
+}
+
+main .main-center-container .services-container__items__item__text-container .button-default-web {
+  padding: 0.3rem 1rem;
+  border: 2px solid darkslategray;
+  font-size: calc(0.5vw + 0.5vh);
+  color: darkslategray;
+}
+
+main .main-center-container .services-container__items__item__text-container .button-default-web:hover {
+  background-color: darkslategray;
+  color: white;
+}
+
+main .main-center-container .services-container__items__item:hover .img-overlay {
+  transform: scale(1.15);
+}
+
+main .main-center-container .services-container__items__item:hover .services-container__items__item__text-container {
+  transform: scale(1.15);
 }
 
 main .main-center-container #clients {
@@ -518,7 +638,7 @@ footer .footer-container .social-media-container i {
   ##Device = Low Resolution Tablets, Mobiles (Landscape),Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 481px to 767px
 */
-@media (min-width: 480px) and (max-width: 767px), (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 650px), (min-width: 200px) and (max-width: 480px) {
   header .top-ui-container .menu-btn {
     display: block;
   }

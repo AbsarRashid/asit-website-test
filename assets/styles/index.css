@@ -60,11 +60,10 @@ ul {
   list-style: none;
 }
 
-.fixed {
-  position: fixed;
-  top: 0;
-}
-
+/*  
+  ##Device = Desktops,Laptops,Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to higher resolution desktops
+*/
 header {
   height: 15vh;
   width: 100vw;
@@ -119,6 +118,119 @@ header .company-name-container__tagline {
   color: #E2E2E2;
 }
 
+header .top-ui-container .menu-btn {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+header .top-ui-container .menu-btn__burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background: #E2E2E2;
+  transition: all 0.5s ease-in-out;
+  /* Right Animation*/
+}
+
+header .top-ui-container .menu-btn__burger::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: #E2E2E2;
+  transition: all 0.5s ease-in-out;
+}
+
+header .top-ui-container .menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: #E2E2E2;
+  transition: all 0.5s ease-in-out;
+}
+
+header .top-ui-container .menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+  /* Building Cross*/
+}
+
+header .top-ui-container .menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+
+header .top-ui-container .menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+header .top-ui-container .menu-btn__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.98;
+  visibility: hidden;
+}
+
+header .top-ui-container .menu-btn__overlay.open {
+  visibility: visible;
+}
+
+header .top-ui-container .menu-btn__overlay .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+  list-style-type: none;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+header .top-ui-container .menu-btn__overlay .menu-nav.open {
+  transform: translateY(0);
+}
+
+header .top-ui-container .menu-btn__overlay .menu-nav__item {
+  transform: translateX(100vh);
+  transition: all 0.5s ease-in-out;
+}
+
+header .top-ui-container .menu-btn__overlay .menu-nav__item.open {
+  transform: translateX(0);
+}
+
+header .top-ui-container .menu-btn__overlay .menu-nav__item.current > a {
+  color: #FF113C;
+}
+
+header .top-ui-container .menu-btn__overlay .menu-nav__link {
+  display: flex;
+  font-size: calc(1.1vw + 1.1vh);
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  transition: all 0.5s ease-in-out;
+}
+
+header .top-ui-container .menu-btn__overlay .menu-nav__link::hover {
+  color: #FF113C;
+}
+
 header .top-ui-container ul {
   width: 17vw;
   display: flex;
@@ -160,6 +272,7 @@ main .main-left-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 main .main-left-container__nav-border {
@@ -278,6 +391,14 @@ main .main-center-container__home__right .card-container .card {
   color: #E2E2E2;
 }
 
+main .main-center-container__home__right .card-container .card h3 {
+  font-size: calc(1.2vw + 1.2vh);
+}
+
+main .main-center-container__home__right .card-container .card p {
+  font-size: calc(0.5vw + 0.5vh);
+}
+
 main .main-center-container__home__right .card-container .card i {
   font-size: calc(2.5vw + 2.4vh);
   padding: 1rem;
@@ -310,7 +431,7 @@ main .main-center-container .aboutUs-container h4 {
 }
 
 main .main-center-container .aboutUs-container p {
-  width: 70%;
+  width: 80%;
   text-align: center;
   line-height: calc(1.5vw + 1.5vh);
 }
@@ -335,7 +456,7 @@ main .main-right-container {
   position: fixed;
   top: 50%;
   right: 0;
-  margin-top: -45vh;
+  margin-top: -40vh;
   width: 5vw;
   height: 100%;
   display: flex;
@@ -391,4 +512,63 @@ footer .footer-container {
 
 footer .footer-container .social-media-container i {
   margin: 0 1.5rem;
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape),Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 480px) and (max-width: 767px), (min-width: 200px) and (max-width: 480px) {
+  header .top-ui-container .menu-btn {
+    display: block;
+  }
+  header .top-ui-container .menu-btn__overlay {
+    display: block;
+  }
+  header .top-ui-container ul {
+    display: none;
+  }
+  main .main-left-container {
+    display: none;
+  }
+  main .main-center-container section {
+    width: 100vw;
+    height: auto;
+    margin-top: 15vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5vh;
+    scroll-snap-align: center;
+  }
+  main .main-center-container__home {
+    display: block;
+  }
+  main .main-center-container__home__left {
+    width: 100%;
+    align-items: center;
+    height: 80vh;
+  }
+  main .main-center-container__home__left .call-to-action {
+    border-left: 0px;
+  }
+  main .main-center-container__home__left .call-to-action .button-default-web {
+    align-self: center;
+  }
+  main .main-center-container__home__right {
+    width: 100%;
+    height: 80vh;
+  }
+  main .main-right-container {
+    display: none;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles 
+  ##Screen = B/w 200px to 479px
+*/
+@media (min-width: 200px) and (max-width: 480px) {
+  header .company-name-container {
+    display: none;
+  }
 }

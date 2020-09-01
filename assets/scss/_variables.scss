@@ -11,3 +11,8 @@ $header-font-family:'Montserrat',
 sans-serif;
 $body-font-family: 'Merriweather',
 serif;
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+
+}

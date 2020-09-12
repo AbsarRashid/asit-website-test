@@ -17,6 +17,7 @@ body {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
+  position: relative;
 
   /* Firefox */
   &::-webkit-scrollbar {
@@ -25,6 +26,11 @@ body {
 
   /* Hide scrollbar for IE, Edge and Firefox */
 
+}
+
+textarea,
+input {
+  outline: none;
 }
 
 hr {

@@ -19,12 +19,18 @@ body {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
+  position: relative;
   /* Firefox */
   /* Hide scrollbar for IE, Edge and Firefox */
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+textarea,
+input {
+  outline: none;
 }
 
 hr {
@@ -181,6 +187,7 @@ header .top-ui-container .menu-btn__overlay {
   left: 0;
   opacity: 0.98;
   visibility: hidden;
+  z-index: 100;
 }
 
 header .top-ui-container .menu-btn__overlay.open {
@@ -560,16 +567,183 @@ main .main-center-container .services-container__items__item:hover .services-con
   transform: scale(1.15);
 }
 
-main .main-center-container #clients {
-  background-color: cadetblue;
+main .main-center-container .services-container__text-header {
+  color: #FF113C;
+  font-size: calc(1.4vw + 1.4vh);
+  display: none;
 }
 
-main .main-center-container #testimonials {
-  background-color: gold;
+main .main-center-container .clients-container__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-center-container .clients-container__header h4 {
+  border-bottom: 2px solid #E2E2E2;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+main .main-center-container .clients-container__main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-center-container .clients-container__main-content__img-container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+}
+
+main .main-center-container .clients-container__main-content__img-container .flip-card {
+  background-color: transparent;
+  width: 15vw;
+  height: 17vh;
+  perspective: 500px;
+}
+
+main .main-center-container .clients-container__main-content__img-container .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+main .main-center-container .clients-container__main-content__img-container .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+main .main-center-container .clients-container__main-content__img-container .flip-card-front,
+main .main-center-container .clients-container__main-content__img-container .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+main .main-center-container .clients-container__main-content__img-container .flip-card-front {
+  color: black;
+}
+
+main .main-center-container .clients-container__main-content__img-container .flip-card-back {
+  background-color: #E2E2E2;
+  color: #8A8A8A;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-center-container .clients-container__main-content__img-container img {
+  width: 15vw;
+  height: 17vh;
+  padding: 0.3rem;
+  border: 2px solid #E2E2E2;
 }
 
 main .main-center-container #contactUs {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .main-center-container #contactUs .header h4 {
+  border-bottom: 2px solid #E2E2E2;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+main .main-center-container #contactUs .contactUs-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-center-container #contactUs .contactUs-container__left {
+  width: 50%;
+  height: 90%;
+  border: 2px solid #E2E2E2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .main-center-container #contactUs .contactUs-container__left .left-container__whole {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .main-center-container #contactUs .contactUs-container__left .left-container__whole .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 2rem 0rem;
+}
+
+main .main-center-container #contactUs .contactUs-container__left .left-container__whole .item input,
+main .main-center-container #contactUs .contactUs-container__left .left-container__whole .item textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 8px 0;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #E2E2E2;
+  border: 2px solid #E2E2E2;
+}
+
+main .main-center-container #contactUs .contactUs-container__left .left-container__whole .item.itembtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-center-container #contactUs .contactUs-container__left .left-container__whole .item.itembtn .button-default-web {
+  padding: 0.3rem 1rem;
+  font-size: calc(0.5vw + 0.5vh);
+  border: 2px solid transparent;
+  color: black;
+  background-color: #E2E2E2;
+  font-size: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+main .main-center-container #contactUs .contactUs-container__left .left-container__whole .item.itembtn .button-default-web:hover {
+  background-color: transparent;
+  border: 2px solid #E2E2E2;
+  color: #E2E2E2;
+}
+
+main .main-center-container #contactUs .contactUs-container__right {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E2E2E2;
+  padding: 1rem;
+}
+
+main .main-center-container #contactUs .contactUs-container__right .icon {
+  color: black;
+  font-size: calc(1.5vw + 1vh);
+}
+
+main .main-center-container #contactUs .contactUs-container__right .item {
+  padding: 0.5rem;
+  color: black;
+  text-align: center;
 }
 
 main .main-right-container {
@@ -634,11 +808,134 @@ footer .footer-container .social-media-container i {
   margin: 0 1.5rem;
 }
 
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Slides */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* The dot/bullet/indicator container */
+  /* The dots/bullets/indicators */
+  /* Add a background color to the active dot/circle */
+  /* Add an italic font style to all quotes */
+  /* Add a blue color to the author */
+}
+
+#testimonials .header h4 {
+  border-bottom: 2px solid #E2E2E2;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+#testimonials .slideshow-container {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  height: 80%;
+}
+
+#testimonials .mySlides {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+}
+
+#testimonials .mySlides .mySlides-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimonials .mySlides .mySlides-container .Name h3 {
+  color: #FF113C;
+}
+
+#testimonials .mySlides .mySlides-container .Name p {
+  padding: 0.5rem 0 1.5rem;
+}
+
+#testimonials .mySlides .mySlides-container img {
+  border-radius: 50%;
+  width: 10vw;
+  height: 20vh;
+  min-width: 100px;
+  min-height: 100px;
+  margin: 1rem;
+}
+
+#testimonials .mySlides .mySlides-container .testimonial-text {
+  width: 80%;
+}
+
+#testimonials .mySlides .mySlides-container .testimonial-text p {
+  line-height: 1.8rem;
+}
+
+#testimonials .prev,
+#testimonials .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #E2E2E2;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+#testimonials .next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#testimonials .prev:hover,
+#testimonials .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+#testimonials .dot-container {
+  text-align: center;
+  padding: 20px;
+}
+
+#testimonials .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #E2E2E2;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#testimonials .active,
+#testimonials .dot:hover {
+  background-color: #8A8A8A;
+}
+
+#testimonials q {
+  font-style: italic;
+}
+
+#testimonials .author {
+  color: cornflowerblue;
+}
+
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape),Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 481px to 767px
 */
-@media (min-width: 480px) and (max-width: 650px), (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 720px), (min-width: 200px) and (max-width: 480px) {
   header .top-ui-container .menu-btn {
     display: block;
   }
@@ -677,6 +974,50 @@ footer .footer-container .social-media-container i {
   main .main-center-container__home__right {
     width: 100%;
     height: 80vh;
+  }
+  main .main-center-container .services-container__menu {
+    display: none;
+  }
+  main .main-center-container .services-container__items {
+    z-index: 1;
+    width: 100%;
+    display: block !important;
+  }
+  main .main-center-container .services-container__items__item__img-container img {
+    width: 30vw;
+    height: 20vh;
+  }
+  main .main-center-container .services-container__items__item .img-overlay {
+    width: 28vw;
+    height: 18vh;
+    left: 50%;
+    margin-left: -28vw;
+  }
+  main .main-center-container .services-container__items__item__text-container {
+    height: 18vh;
+    width: 28vw;
+  }
+  main .main-center-container .services-container__text-header {
+    display: block;
+  }
+  main .main-center-container .clients-container__main-content {
+    position: relative;
+    left: 5vw;
+    margin: 1rem;
+  }
+  main .main-center-container .clients-container__main-content__img-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  main .main-center-container .clients-container__main-content__img-container .flip-card {
+    background-color: transparent;
+    width: 35vw;
+    height: 17vh;
+    perspective: 500px;
+  }
+  main .main-center-container .clients-container__main-content__img-container img {
+    width: 35vw;
   }
   main .main-right-container {
     display: none;

@@ -51,11 +51,79 @@ main {
       &__right {
         width: 100%;
         height: 80vh;
-
-
       }
     }
 
+    .services-container {
+
+
+      &__menu {
+        display: none;
+      }
+
+      &__items {
+        z-index: 1;
+        width: 100%;
+        display: block !important;
+
+        &__item {
+
+          &__img-container {
+
+            img {
+              width: 30vw;
+              height: 20vh;
+            }
+
+          }
+
+          .img-overlay {
+            width: 28vw;
+            height: 18vh;
+            left: 50%;
+            margin-left: -28vw;
+          }
+
+          &__text-container {
+
+            height: 18vh;
+            width: 28vw;
+          }
+        }
+
+
+      }
+
+      &__text-header {
+        display: block;
+      }
+    }
+
+    .clients-container {
+      &__main-content {
+        position: relative;
+        left: 5vw;
+        margin: 1rem;
+
+        &__img-container {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+
+          .flip-card {
+            background-color: transparent;
+            width: 35vw;
+            height: 17vh;
+            perspective: 500px;
+          }
+
+          img {
+            width: 35vw;
+          }
+
+        }
+      }
+    }
   }
 
   .main-right-container {

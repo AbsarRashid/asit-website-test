@@ -6,12 +6,13 @@
   ##Screen = B/w 768px to higher resolution desktops
 */
 @import "MQ-Lg-screen";
+@import "Slider-Testimonial";
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape),Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 481px to 767px
 */
-@media (min-width: 480px) and (max-width: 650px),
+@media (min-width: 480px) and (max-width: 720px),
 (min-width: 200px) and (max-width: 480px) {
   @import "MQ-Md-screen";
 }

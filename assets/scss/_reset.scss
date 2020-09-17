@@ -16,15 +16,17 @@ body {
   overflow-y: scroll;
   -ms-overflow-style: none;
   /* IE and Edge */
+
   scrollbar-width: none;
+  /* Firefox */
+
   position: relative;
 
   /* Firefox */
-  &::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
   }
 
-  /* Hide scrollbar for IE, Edge and Firefox */
 
 }
 

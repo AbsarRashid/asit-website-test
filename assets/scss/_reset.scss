@@ -14,18 +14,22 @@ body {
   background-attachment: fixed;
   color: $primary-color;
   overflow-y: scroll;
-  -ms-overflow-style: none;
-  /* IE and Edge */
 
   scrollbar-width: none;
   /* Firefox */
+  -ms-overflow-style: none;
+
+  /* IE 10+ */
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* Chrome/Safari/Webkit */
+  }
 
   position: relative;
 
   /* Firefox */
-  ::-webkit-scrollbar {
-    display: none;
-  }
+
 
 
 }

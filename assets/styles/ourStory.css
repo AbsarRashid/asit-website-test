@@ -16,16 +16,18 @@ body {
   background-attachment: fixed;
   color: #E2E2E2;
   overflow-y: scroll;
-  -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
   position: relative;
   /* Firefox */
 }
 
-body ::-webkit-scrollbar {
-  display: none;
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* Chrome/Safari/Webkit */
 }
 
 textarea,

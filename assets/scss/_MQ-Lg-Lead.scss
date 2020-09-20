@@ -30,7 +30,7 @@ main {
 
     // border: 3px solid $primary-color;
     .left-container {
-      width: 95%;
+      width: 93%;
       height: 100%;
 
       section {
@@ -62,7 +62,8 @@ main {
 
       }
 
-      .founder-container {
+      .founder-container,
+      .director-container {
         width: 95%;
         height: 100%;
 
@@ -71,14 +72,17 @@ main {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-
+          width: 100%;
+          height: 100%;
 
           .chairman-container {
+            width: 80%;
             display: flex;
             padding: 1rem;
           }
 
           .mdir-container {
+            width: 80%;
             display: flex;
             padding: 1rem;
           }
@@ -93,7 +97,8 @@ main {
             border: 2px solid $primary-color;
 
             img {
-              width: 30%;
+              width: 12vw;
+              height: 20vh;
 
             }
           }
@@ -103,8 +108,39 @@ main {
             display: flex;
             flex-direction: column;
             padding: 2rem;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
+
+            h3 {
+              font-size: calc(0.8vw + 0.8vw);
+            }
+
+            p {
+              font-size: calc(0.6vw + 0.6vw);
+            }
+
+            h4 {
+              color: $secondary-color;
+            }
+
+            .social-icons {
+              width: 80%;
+              display: flex;
+              justify-content: space-evenly;
+              padding: 1rem;
+              border: 2px solid $primary-color;
+
+              i {
+                cursor: pointer;
+
+              }
+
+              i:hover {
+                color: $extra-color;
+              }
+
+
+            }
           }
 
 
@@ -114,6 +150,55 @@ main {
 
 
       }
+
+      .management-container {
+        .left-container__main-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+
+          .top-row,
+          .bottom-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .item {
+              width: 20%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 1rem;
+              margin-top: 0.1rem;
+              border: 2px solid $primary-color;
+              margin-left: 2.5%;
+              margin-right: 2.5%;
+
+              .img-container {
+                img {
+                  width: calc(6vw + 6vh);
+                  height: calc(6vw + 6vh);
+                }
+              }
+
+              .info-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+
+        }
+
+
+      }
+
     }
 
 

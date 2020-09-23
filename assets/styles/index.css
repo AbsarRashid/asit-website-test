@@ -41,7 +41,7 @@ hr {
 }
 
 h1 {
-  font-size: calc(3vw + 3vh);
+  font-size: calc(2.6vw + 2.6vh);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -52,12 +52,12 @@ h2 {
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: calc(1.5vw + 1.5vh);
+  font-size: calc(1.3vw + 1.3vh);
 }
 
 h4 {
   font-family: "Merriweather", serif;
-  font-size: calc(1.1vw + 1.1vh);
+  font-size: calc(1vw + 1vh);
 }
 
 a {
@@ -226,7 +226,7 @@ header .top-ui-container .menu-btn__overlay .menu-nav__item.open {
 }
 
 header .top-ui-container .menu-btn__overlay .menu-nav__item.current > a {
-  color: #a9ff8e;
+  color: #70ac47;
 }
 
 header .top-ui-container .menu-btn__overlay .menu-nav__link {
@@ -238,7 +238,7 @@ header .top-ui-container .menu-btn__overlay .menu-nav__link {
 }
 
 header .top-ui-container .menu-btn__overlay .menu-nav__link::hover {
-  color: #a9ff8e;
+  color: #70ac47;
 }
 
 header .top-ui-container ul {
@@ -341,7 +341,7 @@ main .main-center-container__home__left {
 
 main .main-center-container__home__left h1 {
   padding: 2rem 2rem 0;
-  color: #a9ff8e;
+  color: #70ac47;
 }
 
 main .main-center-container__home__left h3 {
@@ -433,7 +433,7 @@ main .main-center-container .aboutUs-container__title {
 
 main .main-center-container .aboutUs-container h1 {
   padding: 0rem 2rem;
-  color: #a9ff8e;
+  color: #70ac47;
 }
 
 main .main-center-container .aboutUs-container h4 {
@@ -492,7 +492,7 @@ main .main-center-container .services-container__menu ul li.box:hover a {
 }
 
 main .main-center-container .services-container__menu ul li.active {
-  color: #a9ff8e;
+  color: #70ac47;
   font-size: calc(1.4vw + 1.4vh);
 }
 
@@ -571,7 +571,7 @@ main .main-center-container .services-container__items__item:hover .services-con
 }
 
 main .main-center-container .services-container__text-header {
-  color: #a9ff8e;
+  color: #70ac47;
   font-size: calc(1.4vw + 1.4vh);
   display: none;
 }
@@ -693,6 +693,7 @@ main .main-center-container #contactUs .contactUs-container__left .left-containe
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem 2rem 0rem;
+  font-size: calc(0.6vw + .6vh);
 }
 
 main .main-center-container #contactUs .contactUs-container__left .left-container__whole .item input,
@@ -718,7 +719,7 @@ main .main-center-container #contactUs .contactUs-container__left .left-containe
   border: 2px solid transparent;
   color: black;
   background-color: #E2E2E2;
-  font-size: 1rem;
+  font-size: calc(0.6vw + .6vh);
   transition: all 0.5s ease-in-out;
 }
 
@@ -741,13 +742,14 @@ main .main-center-container #contactUs .contactUs-container__right {
 
 main .main-center-container #contactUs .contactUs-container__right .icon {
   color: black;
-  font-size: calc(1.5vw + 1vh);
+  font-size: calc(1.2vw + 1vh);
 }
 
 main .main-center-container #contactUs .contactUs-container__right .item {
   padding: 0.5rem;
   color: black;
   text-align: center;
+  font-size: calc(0.6vw + .6vh);
 }
 
 main .main-right-container {
@@ -855,7 +857,7 @@ footer .footer-container .social-media-container i {
 }
 
 #testimonials .mySlides .mySlides-container .Name h3 {
-  color: #a9ff8e;
+  color: #70ac47;
 }
 
 #testimonials .mySlides .mySlides-container .Name p {

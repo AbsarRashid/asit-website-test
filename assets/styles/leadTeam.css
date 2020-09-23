@@ -41,7 +41,7 @@ hr {
 }
 
 h1 {
-  font-size: calc(3vw + 3vh);
+  font-size: calc(2.6vw + 2.6vh);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -52,12 +52,12 @@ h2 {
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: calc(1.5vw + 1.5vh);
+  font-size: calc(1.3vw + 1.3vh);
 }
 
 h4 {
   font-family: "Merriweather", serif;
-  font-size: calc(1.1vw + 1.1vh);
+  font-size: calc(1vw + 1vh);
 }
 
 a {
@@ -193,7 +193,7 @@ main .lead-container .left-container .director-container .left-container__main-c
 
 main .lead-container .left-container .founder-container .left-container__main-content .info-container h4,
 main .lead-container .left-container .director-container .left-container__main-content .info-container h4 {
-  color: #a9ff8e;
+  color: #70ac47;
 }
 
 main .lead-container .left-container .founder-container .left-container__main-content .info-container .social-icons,
@@ -315,7 +315,7 @@ main .lead-container .left-container .management-container .left-container__main
 main .lead-container .left-container .management-container .left-container__main-content .bottom-row .item .info-container p {
   font-size: calc(0.7vw + 0.7vh);
   text-align: center;
-  color: #a9ff8e;
+  color: #70ac47;
 }
 
 main .lead-container .left-container .executives-container .left-container__main-content {

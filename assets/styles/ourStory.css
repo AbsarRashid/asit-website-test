@@ -41,7 +41,7 @@ hr {
 }
 
 h1 {
-  font-size: calc(3vw + 3vh);
+  font-size: calc(2.6vw + 2.6vh);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -52,12 +52,12 @@ h2 {
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: calc(1.5vw + 1.5vh);
+  font-size: calc(1.3vw + 1.3vh);
 }
 
 h4 {
   font-family: "Merriweather", serif;
-  font-size: calc(1.1vw + 1.1vh);
+  font-size: calc(1vw + 1vh);
 }
 
 a {
@@ -103,7 +103,7 @@ main .main-side-container__nav-border li a {
 }
 
 main .main-side-container__nav-border li.current a {
-  color: #a9ff8e;
+  color: #70ac47;
   font-size: calc(1.8vw + 1.8vh);
 }
 

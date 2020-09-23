@@ -226,7 +226,7 @@ header .top-ui-container .menu-btn__overlay .menu-nav__item.open {
 }
 
 header .top-ui-container .menu-btn__overlay .menu-nav__item.current > a {
-  color: #70ac47;
+  color: #a9ff8e;
 }
 
 header .top-ui-container .menu-btn__overlay .menu-nav__link {
@@ -238,7 +238,7 @@ header .top-ui-container .menu-btn__overlay .menu-nav__link {
 }
 
 header .top-ui-container .menu-btn__overlay .menu-nav__link::hover {
-  color: #70ac47;
+  color: #a9ff8e;
 }
 
 header .top-ui-container ul {
@@ -341,7 +341,7 @@ main .main-center-container__home__left {
 
 main .main-center-container__home__left h1 {
   padding: 2rem 2rem 0;
-  color: #70ac47;
+  color: #a9ff8e;
 }
 
 main .main-center-container__home__left h3 {
@@ -433,7 +433,7 @@ main .main-center-container .aboutUs-container__title {
 
 main .main-center-container .aboutUs-container h1 {
   padding: 0rem 2rem;
-  color: #70ac47;
+  color: #a9ff8e;
 }
 
 main .main-center-container .aboutUs-container h4 {
@@ -492,7 +492,7 @@ main .main-center-container .services-container__menu ul li.box:hover a {
 }
 
 main .main-center-container .services-container__menu ul li.active {
-  color: #70ac47;
+  color: #a9ff8e;
   font-size: calc(1.4vw + 1.4vh);
 }
 
@@ -571,7 +571,7 @@ main .main-center-container .services-container__items__item:hover .services-con
 }
 
 main .main-center-container .services-container__text-header {
-  color: #70ac47;
+  color: #a9ff8e;
   font-size: calc(1.4vw + 1.4vh);
   display: none;
 }
@@ -855,7 +855,7 @@ footer .footer-container .social-media-container i {
 }
 
 #testimonials .mySlides .mySlides-container .Name h3 {
-  color: #70ac47;
+  color: #a9ff8e;
 }
 
 #testimonials .mySlides .mySlides-container .Name p {

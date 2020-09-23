@@ -103,7 +103,7 @@ main .main-side-container__nav-border li a {
 }
 
 main .main-side-container__nav-border li.current a {
-  color: #70ac47;
+  color: #a9ff8e;
   font-size: calc(1.8vw + 1.8vh);
 }
 

@@ -5,7 +5,7 @@ $background-image:'../images/background-image-overlay.jpg';
 $background-image-overlay:linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)),
 url($background-image);
 $primary-color: #E2E2E2;
-$secondary-color: #FF113C;
+$secondary-color: rgb(165, 165, 165); //#FF113C;
 $extra-color: #8A8A8A;
 $header-font-family:'Montserrat',
 sans-serif;

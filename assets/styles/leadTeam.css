@@ -193,7 +193,7 @@ main .lead-container .left-container .director-container .left-container__main-c
 
 main .lead-container .left-container .founder-container .left-container__main-content .info-container h4,
 main .lead-container .left-container .director-container .left-container__main-content .info-container h4 {
-  color: #FF113C;
+  color: #a5a5a5;
 }
 
 main .lead-container .left-container .founder-container .left-container__main-content .info-container .social-icons,
@@ -315,7 +315,7 @@ main .lead-container .left-container .management-container .left-container__main
 main .lead-container .left-container .management-container .left-container__main-content .bottom-row .item .info-container p {
   font-size: calc(0.7vw + 0.7vh);
   text-align: center;
-  color: #FF113C;
+  color: #a5a5a5;
 }
 
 main .lead-container .left-container .executives-container .left-container__main-content {

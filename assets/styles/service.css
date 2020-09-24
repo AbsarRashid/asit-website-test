@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Merriweather", serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url("../images/background-image-overlay.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #E2E2E2;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  position: relative;
+  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* Chrome/Safari/Webkit */
+}
+
+textarea,
+input {
+  outline: none;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: calc(2.6vw + 2.6vh);
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: calc(2.2vw + 2.2vh);
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: calc(1.3vw + 1.3vh);
+}
+
+h4 {
+  font-family: "Merriweather", serif;
+  font-size: calc(1vw + 1vh);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  z-index: 50;
+}
+
+header .company-name-container {
+  width: 60vw;
+}
+
+header .top-ui-container ul {
+  width: 25vw;
+}
+
+main .main-side-container__nav-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-side-container__nav-border a {
+  color: #E2E2E2;
+  font-size: calc(1vw + 1vh);
+}
+
+main .main-side-container__nav-border li {
+  padding: 1rem;
+}
+
+main .main-side-container__nav-border li a {
+  color: #8A8A8A;
+  font-size: calc(1vw + 1vh);
+}
+
+main .main-side-container__nav-border li.current a {
+  color: #70ac47;
+  font-size: calc(1.8vw + 1.8vh);
+}
+
+main .main-main-container section {
+  width: 80vw;
+  height: 80vh;
+  margin-top: 15vh;
+  margin-left: 15vw;
+  margin-bottom: 5vh;
+}
+
+main .main-main-container .container-modules .item-container-modules {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-main-container .container-modules .item-container-modules .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-main-container .container-modules .item-container-modules .header h4 {
+  padding: 1rem;
+  border-bottom: 2px solid #E2E2E2;
+}
+
+main .main-main-container .container-modules .item-container-modules .item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+main .main-main-container .container-modules .item-container-modules .item .img-container {
+  width: 40%;
+}
+
+main .main-main-container .container-modules .item-container-modules .item .img-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+main .main-main-container .container-modules .item-container-modules .item .info-container {
+  width: 60%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #E2E2E2;
+  color: #302727;
+}
+
+main .main-main-container .container-modules .item-container-modules .item .info-container h3 {
+  padding: 0.5rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #302727;
+}
+
+main .main-main-container .container-modules .item-container-modules .item .info-container .module {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .main-main-container .container-modules .item-container-modules .item .info-container .module ul li {
+  margin: 0.8rem;
+  font-size: calc(0.9vw + 0.9vh);
+}
+
+main .main-main-container .container-price .item-container-price {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-main-container .container-price .item-container-price .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-main-container .container-price .item-container-price .header h4 {
+  padding: 1rem;
+  border-bottom: 2px solid #E2E2E2;
+}
+
+main .main-main-container .container-price .item-container-price .items {
+  margin: 2rem;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+  cursor: pointer;
+}
+
+main .main-main-container .container-price .item-container-price .items .item {
+  background-color: #E2E2E2;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #302727;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+main .main-main-container .container-price .item-container-price .items .item p {
+  font-size: calc(0.6vw + 0.6vh);
+  border-bottom: 1px solid #302727;
+  padding: 0.5rem;
+}
+
+main .main-main-container .container-price .item-container-price .items .item .footcap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .main-main-container .container-price .item-container-price .items .item .footcap a {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #70ac47;
+  color: #E2E2E2;
+}
+
+main .main-main-container .container-price .item-container-price .items .item span {
+  color: #70ac47;
+  font-size: calc(1.5vw + 1.5vh);
+}
+
+main .main-main-container .container-price .item-container-price .item:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #70ac47;
+  color: #E2E2E2;
+  transform: scale(1.05);
+}
+
+main .main-main-container .container-price .item-container-price .item:hover p {
+  border-bottom: 1px solid #E2E2E2;
+}
+
+main .main-main-container .container-price .item-container-price .item:hover .footcap a {
+  background-color: #E2E2E2;
+  color: #70ac47;
+}
+
+main .main-main-container .container-price .item-container-price .item:hover span {
+  color: white;
+}
